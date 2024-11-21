@@ -1,0 +1,144 @@
+/* CIS 302 - Project 5
+  Author: Nurzida Toigombaeva
+  Date: 11/21/2024
+*/
+
+@charset "UTF-8";
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(back1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+    20%
+    {
+        transform: translateY(-20px);
+    }
+    40%,100%
+    {
+        transform: translateY(0px);
+    }
+}
+.panel{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.question-container{
+    margin: 10px;
+    padding: 5px;
+    width: 50VW;
+    height: 10vh;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    background-color:rgb(42, 165, 116);
+    color: white
+}
+.result{
+    margin: 10px;
+    padding: 5px;
+    width: 80VW;
+    height: 10vh;
+    text-align: center;
+    font-size: 80px;
+}
+.option-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    padding: 5px;
+    width: 80VW;
+    height: 10vh;
+}
+.option {
+    padding: 10px;
+    width: 15vw; /* Increase width for an oval shape */
+    height: 10vh; /* Reduce height for more oval proportion */
+    font-size: 2em;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-transform: uppercase;
+    color: white;
+    border: none;
+    font-size: 2em;
+    outline: none;
+    background-color: #003366;
+    border-radius: 50%; /* Set border-radius to 50% for a fully oval shape */
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+}
+
+.option:hover{
+    box-shadow: inset 15VW 0 0 0 y;;
+    cursor: pointer;
+    color: red;
+}
+.navigation{
+    width: 50VW;
+    height: 5vh;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.evaluate,.next{
+    width: 20VW;
+    height: 8vh;
+    padding: 5px;
+    border: none;
+    color: azure;
+    border-radius: 20px;
+    transition: ease-out 0.3s;
+    font-size: 2em;
+    outline: none;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-transform: uppercase;
+}
+.evaluate:hover{
+    cursor: pointer;
+    color: #000;
+}
+.next:hover{
+    cursor: pointer;
+    color: #000;
+}
+.evaluate{
+    color:white;
+    background-color: #50DBB4;
+}
+.next{
+    color: white;
+    background-color: orange;
+}
+.restart {
+    width: 20vw;
+    height: 8vh;
+    padding: 5px;
+    border: none;
+    color: azure;
+    border-radius: 20px;
+    transition: ease-out 0.3s;
+    font-size: 2em;
+    outline: none;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-transform: uppercase;
+    background-color: #FF6347; /* For example, a tomato color */
+}
+
+.restart:hover {
+    cursor: pointer;
+    color: #000;
+}
